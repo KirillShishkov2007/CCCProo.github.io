@@ -1,0 +1,203 @@
+*{
+	margin: 15px;
+	box-sizing: border-box;
+}
+body{
+	font-family:helvetica ;
+	background-color: #af3a3a;
+	background-image:url("123.jfif");
+}
+
+
+iframe{
+	margin-left: 100px;
+}
+
+
+/*{
+	margin:15px;
+	box-sizing: border-box;	
+}*/
+
+p {
+	color: #ffea1e;
+	font-size:20px;
+	font-family: "swap" , cursive;
+	
+}
+h1 {
+	color:33232;
+	font-size; 150px;
+}
+div {
+	width: 90%;
+	color: #0501ff;
+	padding: 20px;
+	margin: auto;
+	background-color: #480000;
+
+
+}
+a{
+	font-size: 27px;
+}
+
+
+img {
+	max-width: 100%;
+	height: auto;
+	width: 25%;
+	display: block;
+	margin: 10px;
+	padding-left: 80px;
+	padding-right: 80px;
+
+
+}
+
+
+
+video{
+	margin-top: 200px
+	margin-left: 500px
+}
+
+main {
+	width: 90%;
+	color: #0501ff;
+	padding: 20px;
+	box-shadow: 0 0 10px 1px;
+	margin: auto;
+	background-color: #480000;
+}
+
+
+
+nav ul{
+	list-style:none ;
+	background-color: #480000;
+}
+
+nav > ul > li {
+	float: left;
+}
+
+nav ul::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+nav ul li a{
+	display: inline-block;
+	padding: 2px 20px;
+	text-decoration: none;
+	color: white;
+	width: 220px;
+
+}
+nav ul li a:hover{
+	background-color: #ff0000;
+}
+
+nav ul ul {
+	display: none;
+	position: absolute;
+}
+
+nav ul li:hover ul{
+	display: block;
+}
+
+nav{
+	width: 90%;
+	color: #0501ff;
+	padding: 20px;
+	box-shadow: 0 0 10px 1px;
+	margin: auto;
+	background-color: #480000;
+}
+
+.adaptivny-slayder {
+  position: relative;
+  max-width: 680px;
+  margin: 50px auto;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
+}
+
+.adaptivny-slayder input[name="kadoves"] {
+  display: none;
+}
+
+.kadoves {
+  position: absolute;
+  left: 0;
+  bottom: -40px;
+  text-align: center;
+  width: 100%;
+}
+
+.kadoves label {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  cursor: pointer;
+  margin: 0 3px;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, .0);
+  border-radius: 90%;
+  border: 2px solid #2f363c;
+  background-color: #738290;
+}
+
+#slaid1:checked~.kadoves label[for="slaid1"] {
+  background-color: red;
+}
+
+#slaid2:checked~.kadoves label[for="slaid2"] {
+  background-color: red;
+}
+
+#slaid3:checked~.kadoves label[for="slaid3"] {
+  background-color: red;
+}
+
+.adaptivny-slayder-lasekun {
+  overflow: hidden;
+   
+}
+
+.abusteku-deagulus {
+  display: flex;
+  width: 100%;
+  transition: all 0.5s;
+}
+
+.abusteku-deagulus img {
+  width: 100%;
+  flex-shrink:0;
+}
+
+#slaid1:checked~.adaptivny-slayder-lasekun .abusteku-deagulus {
+  transform: translate(0);
+}
+
+#slaid2:checked~.adaptivny-slayder-lasekun .abusteku-deagulus {
+  transform: translateX(-100%);
+}
+
+#slaid3:checked~.adaptivny-slayder-lasekun .abusteku-deagulus {
+  transform: translateX(-200%);
+}
+
+.container {
+    display:inline-block;   
+    position:relative;
+}
+.container div { 
+    display: inline-block; 
+    position: absolute; 
+    bottom: 10px; left: 0px; 
+    background-color: rgba(0,0,0,.4); 
+    padding: 5px 5px 5px 10px;
+    color: white
+}
